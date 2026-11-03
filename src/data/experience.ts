@@ -21,8 +21,7 @@ export const experience: Experience[] = [
         summary: "Building a fintech product that helps founders connect their multiple dashboards in one place.",
         responsibilities: [],
         contributions: [],
-        // LinkedIn lists "Next.js, React.js and +6 skills" — add the other six here.
-        technologies: ["Next.js", "React.js"],
+        technologies: ["Next.js", "React.js", "Node.js", "Express", "PostgreSQL", "Redis"],
       },
     ],
   },

@@ -155,6 +155,8 @@ export type SkillIcon =
   | "nodejs"
   | "express"
   | "mongodb"
+  | "postgresql"
+  | "redis"
   | "framer"
   | "threejs"
   | "git"

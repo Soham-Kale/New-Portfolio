@@ -29,8 +29,8 @@ export const skillCategories: SkillCategory[] = [
     label: "Backend Development",
     description: "APIs & services",
     skills: [
-      { name: "Node.js", icon: "nodejs", note: "Products and enquiries API for Sanjivani Agarbatti." },
-      { name: "Express", icon: "express" },
+      { name: "Node.js", icon: "nodejs", note: "TurtleIQ-Labs fintech product and the Sanjivani Agarbatti API." },
+      { name: "Express", icon: "express", note: "TurtleIQ-Labs and Sanjivani Agarbatti backends." },
       { name: "REST APIs", icon: "api", note: "Axios interceptors and JWT-protected routes." },
       { name: "Python", icon: "python", note: "Web scraping pipeline at YouInSports." },
     ],
@@ -60,7 +60,11 @@ export const skillCategories: SkillCategory[] = [
     id: "databases",
     label: "Databases",
     description: "Data storage",
-    skills: [{ name: "MongoDB", icon: "mongodb", note: "Mongoose models for products and enquiries." }],
+    skills: [
+      { name: "PostgreSQL", icon: "postgresql", note: "TurtleIQ-Labs fintech product." },
+      { name: "Redis", icon: "redis", note: "TurtleIQ-Labs fintech product." },
+      { name: "MongoDB", icon: "mongodb", note: "Mongoose models for products and enquiries." },
+    ],
   },
   {
     id: "tools",
