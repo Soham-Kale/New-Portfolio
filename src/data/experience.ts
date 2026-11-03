@@ -1,23 +1,42 @@
 import type { Experience } from "@/types";
 
 /**
- * SOURCE: resume (July 2026). Responsibilities are the resume bullets;
- * contributions restate outcomes already named in those bullets.
- * Technologies are only those named in the matching bullets — add more freely.
+ * SOURCE: LinkedIn experience (Nov 2026) for titles, dates, locations and work
+ * mode; resume (July 2026) for the YouInSports and Code Implants bullets.
+ * Contributions restate outcomes already named in those bullets.
+ * Technologies are only those named on LinkedIn or in the bullets — add more freely.
  */
 export const experience: Experience[] = [
   {
+    id: "turtleiq-labs",
+    company: "TurtleIQ-Labs",
+    location: "Pune, Maharashtra, India",
+    workMode: "On-site",
+    roles: [
+      {
+        title: "Founding Engineer",
+        employmentType: "Full-time",
+        start: "2026-10",
+        end: null,
+        summary: "Building a fintech product that helps founders connect their multiple dashboards in one place.",
+        responsibilities: [],
+        contributions: [],
+        // LinkedIn lists "Next.js, React.js and +6 skills" — add the other six here.
+        technologies: ["Next.js", "React.js"],
+      },
+    ],
+  },
+  {
     id: "youinsports",
     company: "YouInSports",
-    location: "Remote",
+    location: "Waterloo, Ontario, Canada",
     workMode: "Remote",
     roles: [
       {
-        // Resume reads "Associate Software Engineering"; confirm exact title on LinkedIn.
-        title: "Associate Software Engineer",
+        title: "Software Engineer",
         employmentType: "Full-time",
         start: "2025-05",
-        end: null,
+        end: "2026-09",
         responsibilities: [
           "Integrated the Stockfish chess engine into a React Native mobile app, enabling real-time move analysis, best-move suggestions and post-game insights.",
           "Built a web scraping pipeline in Python to ingest player profile data from ChessResults.com.",
@@ -28,15 +47,15 @@ export const experience: Experience[] = [
           "Shipped in-app engine analysis that improved competitive gameplay quality",
           "Opponent scouting increased user session engagement",
         ],
-        technologies: ["React Native", "Stockfish", "Python", "Web Scraping"],
+        technologies: ["React Native", "Android Development", "Stockfish", "Python", "Web Scraping", "API Integration"],
       },
     ],
   },
   {
     id: "code-implants",
     company: "Code Implants Software Technologies Pvt. Ltd",
-    location: "Remote",
-    workMode: "Remote",
+    location: "Pune / Pimpri-Chinchwad Area",
+    workMode: "On-site",
     roles: [
       {
         title: "Junior Software Engineer",

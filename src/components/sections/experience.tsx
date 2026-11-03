@@ -19,7 +19,10 @@ function CompanyCard({ company }: { company: ExperienceEntry }) {
             </span>
             <h3 className="text-h3 mt-5">{company.company}</h3>
             <p className="mt-1.5 text-sm text-fg-muted">
-              {company.workMode} · {formatYearMonth(first.start)} — {formatYearMonth(latest.end)}
+              {formatYearMonth(first.start)} — {formatYearMonth(latest.end)}
+            </p>
+            <p className="mt-1 text-sm text-fg-subtle">
+              {company.location} · {company.workMode}
             </p>
             {company.roles.length > 1 && <p className="text-caption mt-4">{company.roles.length} roles</p>}
           </div>
@@ -37,14 +40,18 @@ function CompanyCard({ company }: { company: ExperienceEntry }) {
               </div>
               <p className="mt-1 text-sm text-fg-subtle">{role.employmentType}</p>
 
-              <ul className="mt-5 space-y-2.5">
-                {role.responsibilities.map((item) => (
-                  <li key={item} className="flex gap-3 text-[0.9375rem] leading-relaxed text-fg-muted">
-                    <span className="mt-[0.7em] h-px w-3 shrink-0 bg-fg-subtle" aria-hidden />
-                    {item}
-                  </li>
-                ))}
-              </ul>
+              {role.summary && <p className="mt-5 leading-relaxed text-fg">{role.summary}</p>}
+
+              {role.responsibilities.length > 0 && (
+                <ul className="mt-5 space-y-2.5">
+                  {role.responsibilities.map((item) => (
+                    <li key={item} className="flex gap-3 text-[0.9375rem] leading-relaxed text-fg-muted">
+                      <span className="mt-[0.7em] h-px w-3 shrink-0 bg-fg-subtle" aria-hidden />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              )}
 
               {role.contributions.length > 0 && (
                 <div className="mt-6 rounded-xl border border-line bg-surface-2 p-4 sm:p-5">
@@ -82,7 +89,7 @@ export function Experience({ items }: { items: ExperienceEntry[] }) {
           id="experience-title"
           eyebrow="Experience"
           title="Where I've worked"
-          description={`${roles.length} roles across ${items.length} companies since ${formatYearMonth(earliest)}, all fully remote.`}
+          description={`${roles.length} roles across ${items.length} companies since ${formatYearMonth(earliest)}, on-site and remote.`}
         />
         <div className="space-y-6">
           {items.map((company) => (

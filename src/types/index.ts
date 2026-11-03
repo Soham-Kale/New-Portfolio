@@ -67,6 +67,8 @@ export interface ExperienceRole {
   start: YearMonth;
   /** `null` means "Present". */
   end: YearMonth | null;
+  /** One-line description of the role, shown above the bullets. */
+  summary?: string;
   responsibilities: string[];
   contributions: string[];
   technologies: string[];

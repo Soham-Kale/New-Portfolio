@@ -14,20 +14,20 @@ export const profile: Profile = {
   lastName: "Kale",
   initials: "SK",
   role: "Software Engineer",
-  headline: "Frontend & React Native Engineer",
+  headline: "Full-Stack Developer",
   // DRAFT COPY
   heroHeadline: "Building fast, reliable web and mobile products.",
   // DRAFT COPY
   shortIntro:
     "Software engineer with 2+ years shipping production React, Next.js and React Native work for product teams and freelance clients, from e-commerce storefronts to real-time chess analysis.",
-  location: "India · Working remotely",
+  location: "Pune, India",
   timeZone: "Asia/Kolkata",
   availability: {
     open: true,
     label: "Available for freelance projects",
     detail: "Also open to full-time frontend and React Native roles.",
   },
-  currently: { role: "Associate Software Engineer", company: "YouInSports" },
+  currently: { role: "Founding Engineer", company: "TurtleIQ-Labs" },
   email: "sohamkale3014@gmail.com",
   resumeUrl: "/resume/Soham-Kale-Resume.pdf",
   about: {
@@ -39,7 +39,8 @@ export const profile: Profile = {
     journey: [
       "I studied Computer Science Engineering at Brahmdevdada Mane Institute of Technology, Solapur (2021–2025), and started shipping production code before graduating.",
       "In April 2024 I joined Code Implants Software Technologies as a Software Engineer Intern, building reusable React components, routing, authentication and form flows. In October 2024 I continued there as a Junior Software Engineer and built a farm-fresh e-commerce platform with React, TypeScript, Material UI and Redux Toolkit.",
-      "Since May 2025 I've been an Associate Software Engineer at YouInSports, where I integrated the Stockfish chess engine into a React Native app and built a Python pipeline that enriches player profiles with performance history.",
+      "From May 2025 to September 2026 I was a Software Engineer at YouInSports, working remotely with a team in Waterloo, Canada. I integrated the Stockfish chess engine into a React Native app and built a Python pipeline that enriches player profiles with performance history.",
+      "In October 2026 I joined TurtleIQ-Labs in Pune as a Founding Engineer, building a fintech product that helps founders connect their multiple dashboards in one place.",
     ],
     // DRAFT COPY
     expertise: [
@@ -70,11 +71,11 @@ export const profile: Profile = {
       "Design systems & UI engineering",
     ],
     collaboration:
-      "Every role so far has been fully remote: I've worked inside product teams and alongside cross-functional colleagues to deliver features, fix bugs and refine UI/UX.",
+      "I've worked on-site in Pune and remotely with a team in Canada, inside product teams and alongside cross-functional colleagues, from an early-stage founding role to established product companies.",
     stats: [
       { value: "2+", label: "Years building for production" },
-      { value: "3", label: "Roles across 2 companies" },
-      { value: "100%", label: "Remote collaboration" },
+      { value: "4", label: "Roles across 3 companies" },
+      { value: "3", label: "Live products shipped" },
     ],
   },
 };

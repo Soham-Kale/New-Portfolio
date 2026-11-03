@@ -12,7 +12,7 @@ export const skillCategories: SkillCategory[] = [
     description: "Interfaces for the web",
     skills: [
       { name: "React", icon: "react", note: "Primary UI library across every role." },
-      { name: "Next.js", icon: "nextjs", note: "Sanjivani Agarbatti client site and this portfolio." },
+      { name: "Next.js", icon: "nextjs", note: "Fintech product at TurtleIQ-Labs, the Sanjivani Agarbatti site and this portfolio." },
       { name: "TypeScript", icon: "typescript", note: "Typed React applications." },
       { name: "JavaScript", icon: "javascript" },
       { name: "HTML5", icon: "html" },

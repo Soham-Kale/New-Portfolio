@@ -53,8 +53,8 @@ export const projects: Project[] = [
     description:
       "YouInSports is a platform where athletes build a sports CV, manage their journey and connect with coaches, sponsors and community. I built chess features for its React Native app: in-app engine analysis and data-driven opponent scouting.",
     category: "Mobile App · Sports Tech",
-    year: "2025",
-    role: "Associate Software Engineer",
+    year: "2025–26",
+    role: "Software Engineer",
     technologies: ["React Native", "JavaScript", "Stockfish Engine", "Python", "Web Scraping", "API Integration", "Android Development"],
     thumbnail: "/images/projects/youinsports.webp",
     liveUrl: "https://www.youinsports.ai/",
